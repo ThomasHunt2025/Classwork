@@ -1,4 +1,4 @@
-favourite_games = ['Minecraft', 'Roblox', 'Fortnite', 'Pokemon', 'Call of Duty']
+favourite_games = ['Minecraft', 'Roblox', 'Fortnite', 'Pokemon', 'Block Blast']
 
 game = input('What is your favourite game? ')
 
