@@ -1,5 +1,5 @@
 Fans_list = ["John", "Emily", "Michael", "Sarah", "David"] 
-New_Fans = ["New Person1", "New Person2"] 
+New_Fans = ["New Fan1", "New Fan2"] 
 
 name = input("Enter a name: ") 
 
