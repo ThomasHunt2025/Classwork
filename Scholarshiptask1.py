@@ -5,7 +5,7 @@ composerlist = ['Mozart W.A', '5th symp', 1791,
 count = 0
  
 
-print(f'Artist\t\t Title\t\tYear\t\t')
+print(f'Artist\t\t Title\t\t Year\t\t')
 
 for index in range(0, len(composerlist), 3): 
      print(composerlist[index], "\t",
