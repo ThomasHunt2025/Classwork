@@ -1,4 +1,4 @@
-study_group = ['Thomas', 'Frankie', 'Benjamin', 'Max'] 
+study_group = ['Thomas', 'Frankie', 'Benjamin', 'Cayman'] 
 
 for i in range(3): 
     name = input('Enter a name: ')
