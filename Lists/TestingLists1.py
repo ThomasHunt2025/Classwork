@@ -1,8 +1,8 @@
 favourite_games = ['Minecraft', 'Roblox', 'Fortnite', 'Pokemon', 'Block Blast']
 
-game = input('What is your favourite game? ')
+game = input('Enter Game: ')
 
 if game in favourite_games:
-    print('I like that game too!')
+    print('That game is on the list')
 else: 
-    print("I don't like that game.")
+    print("That game is not in the list.")
