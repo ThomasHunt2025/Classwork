@@ -9,5 +9,7 @@ def characters():
     for food in foods: 
         print(food.capitalize(), len(food), 'characters') 
 
-print(favourite_food())
-print(characters())
+
+favourite_food()
+print()
+characters()
