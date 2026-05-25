@@ -1,5 +1,3 @@
-weathers = []
-
 def check_weather(): 
     weather = int(input('Enter a tmeperature: '))
     
