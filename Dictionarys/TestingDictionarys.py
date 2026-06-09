@@ -9,9 +9,9 @@ while True:
     except ValueError:
         break
 
-    if run_time > 0:
-    run_times.append(run_time)
-    
+    if run_time > 0: 
+        run_times.append(run_time)
+        
     if run_time > best_time:
         best_time > run_time
 
