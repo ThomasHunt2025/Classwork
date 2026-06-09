@@ -11,14 +11,14 @@ while True:
 
     if run_time > 0: 
         run_times.append(run_time)
-        
+
     if run_time > best_time:
         best_time > run_time
 
     if run_time >= goal_time: 
         print('Goal reached!')
-        break 
-
+        break
+    
 print('Recording ended')
 if run_times:
     sorted_times = sorted(run_times, reverse=True)
