@@ -1,27 +1,33 @@
-best_time = 0 
-goal_time = 50
-run_times = [] 
+best_time = 0
+goal_time = 60
+hold_times = []
 
-while True:
-    user_input = int(input('How long did you run? '))
-    try: 
-        run_time = int(user_input)
-    except ValueError:
-        break
+def breath_time():
+    while True:
+        user_input = input('How long can you hold your breath? ')
 
-    if run_time > 0: 
-        run_times.append(run_time)
+        try:
+            hold_time = int(user_input)
+        except ValueError:
+            break
 
-    if run_time > best_time:
-        best_time > run_time
+        if hold_time > 0:
+            hold_times.append(hold_time)
 
-    if run_time >= goal_time: 
-        print('Goal reached!')
-        break
+        if hold_time > best_time:
+            best_time = hold_time
 
-print('Recording ended')
-if run_times:
-    sorted_times = sorted(run_times, reverse=True)
-    print(sorted_times)
-else:
-    print('No valid times were entered')
+        if hold_time >= goal_time:
+            print('Goal reached!')
+            break
+
+    print('Recording ended')
+
+    if hold_times:
+        sorted_times = sorted(hold_times, reverse=True)
+        print('Best time:', best_time)
+        print('All times (highest to lowest):', sorted_times)
+    else:
+        print('No valid times were entered')
+
+breath_time()
