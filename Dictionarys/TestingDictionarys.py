@@ -6,7 +6,7 @@ def breath_time():
     best_time = True
     while True:
         user_input = input('How long can you hold your breath? ')
-
+        
         try:
             hold_time = int(user_input)
         except ValueError:
