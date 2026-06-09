@@ -3,6 +3,7 @@ goal_time = 60
 hold_times = []
 
 def breath_time():
+    best_time = True
     while True:
         user_input = input('How long can you hold your breath? ')
 
@@ -25,8 +26,7 @@ def breath_time():
 
     if hold_times:
         sorted_times = sorted(hold_times, reverse=True)
-        print('Best time:', best_time)
-        print('All times (highest to lowest):', sorted_times)
+        print(sorted_times)
     else:
         print('No valid times were entered')
 
