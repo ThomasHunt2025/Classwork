@@ -2,7 +2,7 @@ best_time = 0
 goal_time = 60
 hold_times = []
 
-def breath_time():
+def getData():
     best_time = True
     while True:
         user_input = input('How long can you hold your breath? ')
@@ -30,4 +30,4 @@ def breath_time():
     else:
         print('No valid times were entered')
 
-breath_time()
+getData()
