@@ -2,7 +2,7 @@ best_time = 0
 goal_time = 60
 hold_times = []
 
-def getData():
+def breath_time():
     best_time = True
     while True:
         user_input = input('How long can you hold your breath? ')
@@ -20,14 +20,7 @@ def getData():
 
         if hold_time >= goal_time:
             print('Goal reached!')
+            print('Recording ended')
             break
 
-    print('Recording ended')
-
-    if hold_times:
-        sorted_times = sorted(hold_times, reverse=True)
-        print(sorted_times)
-    else:
-        print('No valid times were entered')
-
-getData()
+breath_time()
