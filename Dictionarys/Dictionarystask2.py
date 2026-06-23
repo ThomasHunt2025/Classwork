@@ -1,4 +1,5 @@
 def cars():
+    '''Repeatedly ask the user to enter the car manufacturer name'''
     key = input('Enter a car manufacturer (or press enter to finish): ').title()
     return key.strip()
 
@@ -7,7 +8,7 @@ car_dictionary = {}
 flag = True
 while flag:
     key = cars()
-'''If the user presses enter, the code stops'''
+    '''If the user presses enter, the code stops'''
     if key == '':
         flag = False
         
