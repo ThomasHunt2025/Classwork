@@ -1,18 +1,17 @@
 def cars():
-    key = input('Enter a car manufacturer (or press enter to finish): ')
+    key = input('Enter a car manufacturer (or press enter to finish): ').title()
     return key.strip()
 
 car_dictionary = {}
 
-while True:
+flag = True
+while flag:
     key = cars()
 
-    if key == "":
-        break
-
-    key = key.title()
-
-    if key in car_dictionary:
+    if key == '':
+        flag = False
+        
+    elif key in car_dictionary:
         car_dictionary[key] += 1
     else:
         car_dictionary[key] = 1
