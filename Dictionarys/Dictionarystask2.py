@@ -7,7 +7,7 @@ car_dictionary = {}
 flag = True
 while flag:
     key = cars()
-
+'''If the user presses enter, the code stops'''
     if key == '':
         flag = False
         
