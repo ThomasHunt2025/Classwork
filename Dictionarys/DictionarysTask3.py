@@ -24,10 +24,9 @@ def get_input():
             print("Please enter a valid number.")
 
 
-# Dictionary to store student names and attendance percentages
 student_dictionary = {}
 
-# Get student data
+
 while True:
     name, attendance = get_input()
 
@@ -36,7 +35,7 @@ while True:
 
     student_dictionary[name] = attendance
 
-# Display summary
+
 print("Attendance Summary")
 
 total = 0
