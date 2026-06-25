@@ -7,14 +7,14 @@ def get_input():
     '''Repeatedly asks for the student's name and attendance percentage.'''
 
     while True:
-        student_name = input("Enter the student's name (or press Enter to finish): ").strip()
+        student_name = input("Enter the student's name (or press Enter to finish): ").title()
 
         if student_name == "":
             return "", None
 
         try:
             attendance = float(input("Enter their attendance percentage: "))
-
+            '''Validates that the percentage is a number between 0 and 100'''
             if 0 <= attendance <= 100:
                 return student_name, attendance
             else:
@@ -23,7 +23,7 @@ def get_input():
         except ValueError:
             print("Please enter a valid number.")
 
-
+'''Stores the students name and their attendance in a dictionary'''
 student_dictionary = {}
 
 
@@ -35,7 +35,7 @@ while True:
 
     student_dictionary[name] = attendance
 
-
+'''Displays a summary of all students and their attendnce percentage'''
 print("Attendance Summary")
 
 total = 0
