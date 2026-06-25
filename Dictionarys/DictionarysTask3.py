@@ -5,7 +5,7 @@ It stores the results in a dictionary and displays a summary.
 
 def get_input():
     '''Repeatedly asks for the student's name and attendance percentage.'''
-
+    
     while True:
         student_name = input("Enter the student's name (or press Enter to finish): ").title()
 
