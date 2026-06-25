@@ -1,5 +1,5 @@
 '''
-This program repeatedly asks the user to enter a car manufacturer
+This program repeatedly asks the user to enter a car manufacturer and outputs the frequency of the manufacturers entered
 '''
 
 
