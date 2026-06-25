@@ -26,7 +26,7 @@ def get_input():
 '''Stores the students name and their attendance in a dictionary'''
 student_dictionary = {}
 
-
+'''Uses a while loop to keep collecting data'''
 while True:
     name, attendance = get_input()
 
